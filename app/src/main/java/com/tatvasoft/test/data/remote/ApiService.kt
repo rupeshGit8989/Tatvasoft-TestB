@@ -1,6 +1,6 @@
 package com.tatvasoft.test.data.remote
 
-import com.tatvasoft.test.model.UserListResponse
+import com.tatvasoft.test.model.UserModel
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -15,6 +15,6 @@ interface ApiService {
     suspend fun fetchUsers(
         @Query("page") number: Int,
         @Query("per_page") per_page: Int
-    ): Response<UserListResponse>
+    ): Response<UserModel>
 
 }

@@ -1,6 +1,6 @@
 package com.tatvasoft.test.model
 
-data class UserEntity(
+data class UserItem(
     val id: Int,
 
     var first_name: String,
